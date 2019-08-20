@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('products.index') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Store') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                     <ul class="navbar-nav ml-auto">
                       @auth
                       <form action="{{route('products.search')}}" method="get" class="form-inline my-2 my-lg-0">
-                        
+
                         <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                       </form>
